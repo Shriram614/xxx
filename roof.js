@@ -1,4 +1,4 @@
-class ground
+class roof
 {
 	constructor(x,y,w,h)
 	{
@@ -16,14 +16,14 @@ class ground
 	display()
 	{
 			
-			var pos=this.body.position;		
+			var groundPos=this.body.position;		
 
 			push()
-			translate(pos.x,pos.y);
+			translate(groundPos.x, groundPos.y);
 			rectMode(CENTER)
-			strokeWeight(4);
-			fill("blue")
-			rect(pos.x,pos.y,this.w, this.h);
+			//strokeWeight(4);
+			fill(128,128,128)
+			rect(0,0,this.w, this.h);
 			pop()
 			
 	}
